@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    height: 180vh;
+}
+
+.container{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+    /* Ativando flexbox */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: fle-end;Alinha no final da linha no topo*/
+    /* justify-content: center; alinha no centro da linha no topo*/
+    /* justify-content: space-between; espaçamento igual entre eles*/
+    /* justify-content: space-around; espaçamento igual entre eles com folga nos cantos*/
+    justify-content: center;
+    align-items: center;
+}
+
+.area{
+    width: 100px;
+    height: 100px;
+
+    font-size: 25px;
+
+    
+}
+.item-1{
+    background-color: red;
+    order: 3;
+    align-self: flex-end;
+ 
+    
+
+}
+
+.item-2{
+    background-color: blue;
+    /* Esse elemento vai reduzir duas vezes mais os elementos com 1 */
+   order: 2;
+
+}
+.item-3{
+    background-color: darkgray;
+    order: 1;
+    
+}
+.item-4{
+    background-color: blueviolet;
+
+}
